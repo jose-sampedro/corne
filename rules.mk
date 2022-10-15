@@ -1,31 +1,25 @@
-# MCU name
 MCU = atmega32u4
-
-# Bootloader selection
 BOOTLOADER = caterina
+EXTRAFLAGS = -flto -mcall-prologues
+BOOTMAGIC_ENABLE = no
+MAGIC_ENABLE = no
+SWAP_HANDS_ENABLE = no
+TAP_DANCE_ENABLE = yes
+COMBO_ENABLE = no
+STENO_ENABLE = no
 
-# Build Options
-#   change yes to no to disable
-#
-BOOTMAGIC_ENABLE = yes      # Enable Bootmagic Lite
-MOUSEKEY_ENABLE = yes       # Mouse keys
-EXTRAKEY_ENABLE = yes       # Audio control and System control
-CONSOLE_ENABLE = no         # Console for debug
-COMMAND_ENABLE = no         # Commands for debug and configuration
-NKRO_ENABLE = yes           # Enable N-Key Rollover
-BACKLIGHT_ENABLE = no       # Enable keyboard backlight functionality
-RGBLIGHT_ENABLE = no        # Enable keyboard RGB underglow
-AUDIO_ENABLE = no           # Audio output
-RGB_MATRIX_ENABLE = no
-RGB_MATRIX_DRIVER = WS2812
+CONSOLE_ENABLE = no
+COMMAND_ENABLE = no
+NKRO_ENABLE = no
 LTO_ENABLE = yes
 
-# if firmware size over limit, try this option
-# LTO_ENABLE = yes
+MOUSEKEY_ENABLE = yes
+EXTRAKEY_ENABLE = no
+AUDIO_ENABLE = no
+KEY_LOCK_ENABLE = no
+SPACE_CADET_ENABLE = no
+GRAVE_ESC_ENABLE = no
 
-SPLIT_KEYBOARD = yes
-
-RGBLIGHT_SUPPORTED = yes
-RGB_MATRIX_SUPPORTED = yes
-
-LAYOUTS = split_3x5_3 split_3x6_3
+BACKLIGHT_ENABLE = no
+RGBLIGHT_ENABLE   = no
+RGB_MATRIX_ENABLE = yes
