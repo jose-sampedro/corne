@@ -1,7 +1,6 @@
 #include QMK_KEYBOARD_H
 #include "layers.h"
 #include "rgb.h"
-#include "eeprom.h"
 
 /*
 
