@@ -1,8 +1,21 @@
 #pragma once
 
+#define POINTING_DEVICE_ROTATION_90
+
+#define POINTING_DEVICE_INVERT_X
+#define POINTING_DEVICE_INVERT_Y
+
+
+
+
+#define SPLIT_OLED_ENABLE
+#define OLED_TIMEOUT 30000
+#define OLED_FONT_H "keyboards/crkbd/keymaps/ritakyhotkey/features/oled/glcdfont.c"
+
 // https://docs.qmk.fm/#/feature_rgb_matrix?id=rgb-matrix-effects
 
 #define TAPPING_TOGGLE 2
+#define TAPPING_TERM 300
 #define MASTER_LEFT
 #define SPLIT_LAYER_STATE_ENABLE
 #define LAYER_STATE_16BIT
