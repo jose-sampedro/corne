@@ -1,12 +1,35 @@
 #pragma once
 
-#define HOME_A LGUI_T(KC_A)
-#define HOME_S LALT_T(KC_S)
-#define HOME_D LSFT_T(KC_D)
-#define HOME_F LCTL_T(KC_F)
+enum custom_keycodes {
+  CK_QUOT,
+  CK_REPEAT,
+  CK_EQGT,
+  SELWORD,
+  ALT_TAB,
+        PM_SCROLL,    //Toggle trackball scrolling mode
+      PM_PRECISION   //Toggle trackball precision mode 
+};
 
-#define HOME_J RCTL_T(KC_J)
-#define HOME_K RSFT_T(KC_K)
-#define HOME_L LALT_T(KC_L)
-#define HOME_SCLN RGUI_T(KC_SCLN)
+#define CK_A        LGUI_T(KC_A)
+#define CK_S        ALGR_T(KC_S)
+#define CK_D        LSFT_T(KC_D)
+#define CK_F        LCTL_T(KC_F)
+#define CK_J        RCTL_T(KC_J)
+#define CK_K        RSFT_T(KC_K)
+#define CK_L        LALT_T(KC_L)
+#define CK_SCLN     RGUI_T(KC_SCLN)
+#define CK_W_LEFT   A(KC_LEFT)
+#define CK_W_RIGHT  A(KC_RIGHT)
+#define CK_WW_LEFT  C(KC_LEFT)
+#define CK_WW_RIGHT C(KC_RIGHT)
+#define CK_COPY     C(KC_C)
+#define CK_CUT      C(KC_X)
+#define CK_PASTE    C(KC_V)
+#define CK_PGUP     C(KC_PGUP)
+#define CK_PGDN     C(KC_PGDN)
 
+
+#define CK_MD1      LT(_M1, KC_TAB)
+#define CK_MD2      LT(_M2, KC_SPC)
+#define CK_MD3      LT(_M3, KC_BSPC)
+#define CK_MD4      LT(_M4, KC_ENT)

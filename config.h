@@ -1,10 +1,40 @@
 #pragma once
 
+
+//#define PIMORONI_TRACKBALL_INTERVAL_MS 6 //Default is 8ms
+#define PIMORONI_TRACKBALL_ROTATE //Change according to your particular installed trackball orientation.
+#define PIMORONI_TRACKBALL_INVERT_Y
+#define PIMORONI_TRACKBALL_INVERT_X
+// Disabled to save space
+#define NO_ACTION_MACRO
+#define NO_ACTION_FUNCTION
+#define NO_ACTION_ONESHOT		//Save 244 bytes (-244).
+#define NO_RESET				//Save 40 bytes (-40).
+#define LAYER_STATE_8BIT		//For less than 8 bits worth of layers.
+#undef LOCKING_SUPPORT_ENABLE	//For MX lock keys only.
+#undef LOCKING_RESYNC_ENABLE	//For MX lock keys only.
+//#define SUPER_ALT_TAB_ENABLE	//Enable super alt tab custom keycode(+178).
+
+
+
+
+
+
+
+
+
+
+#define SPLIT_OLED_ENABLE
+#define OLED_TIMEOUT 30000
+#define OLED_FONT_H "keyboards/crkbd/keymaps/ritakyhotkey/features/oled/glcdfont.c"
+
 // https://docs.qmk.fm/#/feature_rgb_matrix?id=rgb-matrix-effects
 
 #define TAPPING_TOGGLE 2
+#define TAPPING_TERM 300
 #define MASTER_LEFT
 #define SPLIT_LAYER_STATE_ENABLE
+#define SPLIT_WPM_ENABLE
 #define LAYER_STATE_16BIT
 
 #define RGB_MATRIX_KEYPRESSES
